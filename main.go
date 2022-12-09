@@ -69,7 +69,7 @@ func parse(f io.Reader) (Resolver, error) {
 			for _, s := range rest {
 				s := strings.TrimSpace(s)
 				if s != "" {
-					sortlist = append(domains, s)
+					sortlist = append(sortlist, s)
 				}
 			}
 		}
